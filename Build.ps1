@@ -23,5 +23,4 @@ if (-not(Test-Path $bin))
 
 # BUILD ALL SAMPLES
 
-gcc .\src\Sample_1.c -o .\bin\Sample_1.exe
-gcc .\src\Sample_2.c -o .\bin\Sample_2.exe
+Get-ChildItem .\src | % { gcc ".\src\$_" -o ".\bin\$_.exe" }
