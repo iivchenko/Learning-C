@@ -22,3 +22,5 @@ if (-not(Test-Path $bin))
 }
 
 # BUILD ALL SAMPLES
+
+gcc .\src\Sample_1.c -o .\bin\Sample_1.exe
